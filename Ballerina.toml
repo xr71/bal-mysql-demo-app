@@ -1,0 +1,14 @@
+[package]
+org = "xuren"
+name = "app1"
+version = "0.1.0"
+distribution = "2201.1.0"
+
+[build-options]
+observabilityIncluded = true
+cloud = "docker"
+
+[[platform.java11.dependency]]
+groupId="mysql"
+artifactId="mysql-connector-java"
+version="8.0.29"

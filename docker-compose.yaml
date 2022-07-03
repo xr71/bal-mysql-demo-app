@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  mysql-local:
+    image: mysql:8
+    user: "root"
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=testing
+      - MYSQL_ROOT_PASSWORD=root
+    restart: always
+    volumes:
+      - ./mysql-data:/var/lib/mysql:rw
